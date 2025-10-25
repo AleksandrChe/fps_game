@@ -1,0 +1,34 @@
+# Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.vs/
+*.VC.db
+*.VC.opendb
+*.sln
+
+# Plugins build
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Build artifacts
+Build/
+
+# Config for users
+*.log
+*.obj
+*.pdb
+*.exe
+*.dll
+
+# Mac/Win hidden files
+.DS_Store
+Thumbs.db
+
+# Backups
+*_BuiltData.uasset
+
+# Auto-generated UE files
+*.Generated.*
