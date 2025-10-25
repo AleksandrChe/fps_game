@@ -1,34 +1,78 @@
-# Unreal Engine
-Binaries/
-DerivedDataCache/
-Intermediate/
-Saved/
-.vscode/
-.vs/
+# ==========================================
+# Unreal Engine 5.6 .gitignore
+# ==========================================
+
+# Build and intermediate files
+[Bb]inaries/
+[Ii]ntermediate/
+[Ss]aved/
+[Dd]erivedDataCache/
 *.VC.db
 *.VC.opendb
+
+# IDE files
+.vscode/
+.idea/
 *.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+*.xcconfig
+*.VC.db
+*.VC.opendb
 
-# Plugins build
-Plugins/*/Binaries/
-Plugins/*/Intermediate/
+# Backup files
+*_Backup/
+*_backup/
+*.tmp
+*.bak
+*.old
+*.orig
 
-# Build artifacts
-Build/
-
-# Config for users
+# Logs
 *.log
-*.obj
-*.pdb
-*.exe
-*.dll
+*.dmp
 
-# Mac/Win hidden files
+# System / OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Backups
+# Config cache (user-specific)
+Config/DefaultEditorPerProjectUserSettings.ini
+Config/DefaultEditorSettings.ini
+Config/DefaultEngine.ini
+Config/DefaultInput.ini
+Config/DefaultGame.ini
+
+# Plugins intermediate and binaries
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Saved/
+
+# Project autosaves
+Saved/Autosaves/
+Saved/Backup/
+Saved/Collections/
+Saved/Logs/
+Saved/Config/WindowsEditor/
+
+# Build results
+Build/*/
+
+# Local test levels
 *_BuiltData.uasset
 
-# Auto-generated UE files
-*.Generated.*
+# Unreal Shader Compile Data
+DerivedDataCache/
+*.ushadercache
+*.upipelinecache
+*.shaderbytecode
+
+# Ignore temporary cooking outputs
+Cooked/
+StagedBuilds/
+
+# Ignore local mods and developer folders
+Mods/
+Developers/
